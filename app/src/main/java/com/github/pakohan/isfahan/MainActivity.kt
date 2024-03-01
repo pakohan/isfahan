@@ -1,4 +1,4 @@
-package com.github.pakohan.isfahan.app
+package com.github.pakohan.isfahan
 
 import com.github.pakohan.isfahan.R
 import android.os.Bundle
