@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace "com.github.pakohan.isfahan"
     compileSdkVersion 34
     defaultConfig {
         applicationId "com.github.pakohan.isfahan"
