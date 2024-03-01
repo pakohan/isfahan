@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
-        android:label="Demo App"
+        android:label="Isfahan"
         android:theme="@style/AppTheme">
 
         <activity android:name="com.github.pakohan.isfahan.app.MainActivity" android:exported="true">
