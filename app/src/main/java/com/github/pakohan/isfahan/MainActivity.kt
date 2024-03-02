@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContent {
             Column {
                 Text(getString(R.string.hello))
-                Button(onClick = { myText = "clicked" }) { Text("Click!") }
+                Button(onClick = { }) { Text("Click!") }
             }
         }
     }
