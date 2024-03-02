@@ -18,12 +18,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         var myText by text
+        var textField: String 
         myText = getString(R.string.hello)
         setContent {
             Column {
                 Text(text = myText)
-                TextField(value = "", onValueChange = { myText = it }, label = { Text("Label") })
-                Button(onClick = { myText = "clicked" }) { Text("Click!") }
+                TextField(value = "", onValueChange = { textField = it }, label = { Text("Label") })
+                Button(onClick = { myText = textField }) { Text("Click!") }
             }
         }
     }
