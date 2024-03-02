@@ -6,9 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
-import com.github.pakohan.isfahan.R
-import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import com.github.pakohan.isfahan.R
 
 class MainActivity : AppCompatActivity() {
     val text = mutableStateOf(getString(R.string.hello))
@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContent {
             Column {
                 Text(text = myText)
-                Button(onClick = {text.value = "other text"}) { Text("Click!") }
+                Button(onClick = { text.value = "other text" }) { Text("Click!") }
             }
         }
     }
