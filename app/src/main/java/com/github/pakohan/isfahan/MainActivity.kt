@@ -13,17 +13,16 @@ import androidx.compose.runtime.setValue
 import com.github.pakohan.isfahan.R
 
 class MainActivity : AppCompatActivity() {
-    val text = mutableStateOf("")
+    var myText by text = mutableStateOf("")
+    var textField by remember { mutableStateOf("") }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        var myText by text
-        var textField: String = ""
         myText = getString(R.string.hello)
         setContent {
             Column {
                 Text(text = myText)
-                TextField(value = "", onValueChange = { textField = it }, label = { Text("Label") })
+                TextField(value = textField, onValueChange = { textField = it }, label = { Text("Label") })
                 Button(onClick = { myText = textField }) { Text("Click!") }
             }
         }
