@@ -13,10 +13,11 @@ import androidx.compose.runtime.setValue
 import com.github.pakohan.isfahan.R
 
 class MainActivity : AppCompatActivity() {
-    var myText by text { mutableStateOf("") }
-    var textField by text { mutableStateOf("") }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        var myText by text { mutableStateOf("") }
+        var textField by text { mutableStateOf("") }
 
         myText = getString(R.string.hello)
         setContent {
