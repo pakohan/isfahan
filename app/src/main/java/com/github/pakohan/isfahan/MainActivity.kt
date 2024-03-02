@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         var textArea by textAreaState
         var textField by textFieldState
 
-        myText = getString(R.string.hello)
+        textArea = getString(R.string.hello)
         setContent {
             Column {
                 Text(text = textArea)
