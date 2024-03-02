@@ -12,6 +12,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import com.github.pakohan.isfahan.R
 import androidx.compose.ui.Modifier
+import androidx.compose.foundation.layout.fillMaxWidth
 
 class MainActivity : AppCompatActivity() {
     val textAreaState = mutableStateOf("")
