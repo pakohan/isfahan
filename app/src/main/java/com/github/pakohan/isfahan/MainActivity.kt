@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import com.github.pakohan.isfahan.R
+import androidx.compose.runtime.mutableStateOf
 
 class MainActivity : AppCompatActivity() {
     val text = mutableStateOf(getString(R.string.hello))
@@ -16,13 +17,13 @@ class MainActivity : AppCompatActivity() {
         val myText by text
         setContent {
             Column {
-                Text(myText)
-                Button(onClick = buttonClick) { Text("Click!") }
+                Text(text = myText)
+                Button(onClick = { buttonClick }) { Text("Click!") }
             }
         }
     }
 
-    fun buttonClick(): Unit {
+    fun buttonClick() {
         text.value = "other text"
     }
 }
