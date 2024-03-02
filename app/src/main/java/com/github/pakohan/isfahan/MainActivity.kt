@@ -18,8 +18,8 @@ class MainActivity : AppCompatActivity() {
         val myText by text
         setContent {
             Column {
-                Text(text = myText)
-                Button(onClick = { text.value = "other text" }) { Text("Click!") }
+                Text(text =  myText)
+                Button() { Text("Click!") }
             }
         }
     }
