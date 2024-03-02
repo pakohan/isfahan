@@ -11,6 +11,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import com.github.pakohan.isfahan.R
+import androidx.compose.ui.Modifier
 
 class MainActivity : AppCompatActivity() {
     val textAreaState = mutableStateOf("")
@@ -27,10 +28,14 @@ class MainActivity : AppCompatActivity() {
                 Text(text = textArea)
                 TextField(
                     value = textField,
+                    modifier = Modifier.fillMaxWidth(),
                     onValueChange = { textField = it },
                     label = { Text("Label") }
                 )
-                Button(onClick = { textArea = textField }) { Text("Click!") }
+                Button(
+                    onClick = { textArea = textField },
+                    modifier = Modifier.fillMaxWidth()
+                ) { Text("Click!") }
             }
         }
     }
