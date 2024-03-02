@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         var myText by text
-        var textField: String 
+        var textField: String = ""
         myText = getString(R.string.hello)
         setContent {
             Column {
