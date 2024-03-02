@@ -24,13 +24,13 @@ class MainActivity : AppCompatActivity() {
         myText = getString(R.string.hello)
         setContent {
             Column {
-                Text(text = myText)
+                Text(text = textArea)
                 TextField(
                     value = textField,
                     onValueChange = { textField = it },
                     label = { Text("Label") }
                 )
-                Button(onClick = { myText = textField }) { Text("Click!") }
+                Button(onClick = { textArea = textField }) { Text("Click!") }
             }
         }
     }
