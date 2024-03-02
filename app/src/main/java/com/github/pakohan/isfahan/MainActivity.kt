@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContent {
             Column {
                 Text(text =  myText)
-                Button(onClick = { text = "clicked" }) { Text("Click!") }
+                Button(onClick = { myText = "clicked" }) { Text("Click!") }
             }
         }
     }
