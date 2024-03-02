@@ -3,8 +3,7 @@
 
     <application
         android:label="Isfahan"
-        android:theme="@style/AppTheme"
-        android:name="MyApplication">
+        android:theme="@style/AppTheme">
 
         <activity android:name="com.github.pakohan.isfahan.app.MainActivity" android:exported="true">
             <intent-filter>
