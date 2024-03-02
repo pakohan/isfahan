@@ -12,7 +12,7 @@ import androidx.compose.runtime.mutableStateOf
 import com.github.pakohan.isfahan.R
 
 class MainActivity : AppCompatActivity() {
-    val text = mutableStateOf(getString(R.string.hello))
+    var text = mutableStateOf(getString(R.string.hello))
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
