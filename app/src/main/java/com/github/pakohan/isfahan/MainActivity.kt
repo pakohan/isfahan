@@ -13,13 +13,16 @@ import androidx.compose.runtime.setValue
 import androidx.compose.runtime.mutableStateOf
 
 class MainActivity : AppCompatActivity() {
-    val text = mutableStateOf(getString(R.string.hello))
+    val text = mutableStateOf("")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        var myText by text
+        myText = getString(R.string.hello)
         setContent {
             Column {
-                Text(getString(R.string.hello))
-                Button(onClick = { }) { Text("Click!") }
+                Text(text = myText)
+                Button(onClick = { myText = "clicked" }) { Text("Click!") }
             }
         }
     }
