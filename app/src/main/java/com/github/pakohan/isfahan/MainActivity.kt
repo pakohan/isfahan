@@ -8,6 +8,8 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import com.github.pakohan.isfahan.R
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.livedata.observeAsState
 
 class MainActivity : AppCompatActivity() {
     val text = mutableStateOf(getString(R.string.hello))
