@@ -12,11 +12,11 @@ import androidx.compose.runtime.mutableStateOf
 import com.github.pakohan.isfahan.R
 
 class MainActivity : AppCompatActivity() {
-    var text = mutableStateOf(getString(R.string.hello))
+    val text = mutableStateOf(getString(R.string.hello))
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val myText by text
+        var myText by text
         setContent {
             Column {
                 Text(text =  myText)
