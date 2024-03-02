@@ -26,7 +26,10 @@ class MainActivity : AppCompatActivity() {
         textArea = getString(R.string.hello)
         setContent {
             Column {
-                Text(text = textArea)
+                Text(
+                    text = textArea,
+                    modifier = Modifier.fillMaxWidth().weight(1),
+                )
                 TextField(
                     value = textField,
                     modifier = Modifier.fillMaxWidth(),
